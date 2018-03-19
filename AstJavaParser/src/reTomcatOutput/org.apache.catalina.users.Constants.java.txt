@@ -1,0 +1,5 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			Package

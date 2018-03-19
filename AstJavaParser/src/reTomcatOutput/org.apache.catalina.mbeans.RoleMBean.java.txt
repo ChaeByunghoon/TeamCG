@@ -1,0 +1,19 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+	FieldDeclaration
+		VariableDeclarator
+			createRegistry
+				MBeanUtils
+			registry
+	FieldDeclaration
+		VariableDeclarator
+			createServer
+				MBeanUtils
+			mserver
+	FieldDeclaration
+		VariableDeclarator
+			findManagedBean
+				StringLiteralExpr
+				registry
+			managed

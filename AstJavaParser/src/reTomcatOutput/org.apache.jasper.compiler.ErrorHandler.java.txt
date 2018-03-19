@@ -1,0 +1,7 @@
+ClassOrInterfaceDeclaration
+	MethodDeclaration
+		PrimitiveType
+		PrimitiveType
+	MethodDeclaration
+	MethodDeclaration
+	MethodDeclaration

@@ -1,0 +1,12 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			EVAL_BODY_TAG
+			PrimitiveType
+		StringLiteralExpr
+	FieldDeclaration
+		VariableDeclarator
+			EVAL_BODY_BUFFERED
+			PrimitiveType
+	MethodDeclaration
+	MethodDeclaration

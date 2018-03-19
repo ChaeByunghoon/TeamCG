@@ -1,0 +1,24 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			type
+	FieldDeclaration
+		VariableDeclarator
+			value
+	MethodDeclaration
+		BlockStmt
+			type
+	MethodDeclaration
+		BlockStmt
+			value
+	MethodDeclaration
+		BlockStmt
+			text
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				value
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				type

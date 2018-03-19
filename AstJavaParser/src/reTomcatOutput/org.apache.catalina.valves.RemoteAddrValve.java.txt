@@ -1,0 +1,17 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			info
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				info
+	MethodDeclaration
+		BlockStmt
+			process
+				getRemoteAddr
+					getRequest
+						request
+				request
+				response

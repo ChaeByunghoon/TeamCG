@@ -1,0 +1,19 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			name
+	FieldDeclaration
+		VariableDeclarator
+			value
+	ConstructorDeclaration
+		BlockStmt
+			sc
+			request
+			name
+			value
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt

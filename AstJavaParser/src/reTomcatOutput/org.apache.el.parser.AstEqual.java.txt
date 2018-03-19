@@ -1,0 +1,21 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+			id
+		PrimitiveType
+	MethodDeclaration
+		BlockStmt
+			VariableDeclarator
+				getValue
+					ctx
+				obj0
+			VariableDeclarator
+				getValue
+					ctx
+				obj1
+			ReturnStmt
+				valueOf
+					equals
+						obj0
+						obj1
+					Boolean

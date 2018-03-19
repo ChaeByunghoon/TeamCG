@@ -1,0 +1,27 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			APR_MMAP_READ
+			PrimitiveType
+	FieldDeclaration
+		VariableDeclarator
+			APR_MMAP_WRITE
+			PrimitiveType
+	MethodDeclaration
+		PrimitiveType
+		PrimitiveType
+		PrimitiveType
+		PrimitiveType
+		PrimitiveType
+		PrimitiveType
+	MethodDeclaration
+		PrimitiveType
+		PrimitiveType
+		PrimitiveType
+	MethodDeclaration
+		PrimitiveType
+		PrimitiveType
+	MethodDeclaration
+		PrimitiveType
+		PrimitiveType
+		PrimitiveType

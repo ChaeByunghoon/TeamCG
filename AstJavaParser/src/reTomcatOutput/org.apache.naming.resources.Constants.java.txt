@@ -1,0 +1,13 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			PROTOCOL_HANDLER_VARIABLE
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			Package
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			DEFAULT_NAMESPACE

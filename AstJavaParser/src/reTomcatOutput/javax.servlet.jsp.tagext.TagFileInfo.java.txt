@@ -1,0 +1,27 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+			name
+			path
+			tagInfo
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				name
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				path
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				tagInfo
+	FieldDeclaration
+		VariableDeclarator
+			name
+	FieldDeclaration
+		VariableDeclarator
+			path
+	FieldDeclaration
+		VariableDeclarator
+			tagInfo

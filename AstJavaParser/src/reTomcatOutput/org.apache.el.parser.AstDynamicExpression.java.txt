@@ -1,0 +1,26 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+			id
+		PrimitiveType
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				getType
+					ctx
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				getValue
+					ctx
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				isReadOnly
+					ctx
+		PrimitiveType
+	MethodDeclaration
+		BlockStmt
+			setValue
+				ctx
+				value

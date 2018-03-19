@@ -1,0 +1,10 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+			id
+		PrimitiveType
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				getValue
+					ctx

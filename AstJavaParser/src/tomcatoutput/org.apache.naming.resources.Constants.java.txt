@@ -1,0 +1,21 @@
+CompilationUnit
+	ClassOrInterfaceDeclaration
+		ClassOrInterfaceDeclaration
+		FieldDeclaration
+			FieldDeclaration
+			ClassOrInterfaceType
+				ClassOrInterfaceType
+			VariableDeclarator
+				StringLiteralExpr
+		FieldDeclaration
+			FieldDeclaration
+			ClassOrInterfaceType
+				ClassOrInterfaceType
+			VariableDeclarator
+				StringLiteralExpr
+		FieldDeclaration
+			FieldDeclaration
+			ClassOrInterfaceType
+				ClassOrInterfaceType
+			VariableDeclarator
+				StringLiteralExpr

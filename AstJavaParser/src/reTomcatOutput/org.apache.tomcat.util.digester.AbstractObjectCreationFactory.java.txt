@@ -1,0 +1,12 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			NullLiteralExpr
+			digester
+	MethodDeclaration
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+	MethodDeclaration
+		BlockStmt
+			digester

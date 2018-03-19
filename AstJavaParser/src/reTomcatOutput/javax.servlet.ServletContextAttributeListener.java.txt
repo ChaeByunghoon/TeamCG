@@ -1,0 +1,4 @@
+ClassOrInterfaceDeclaration
+	MethodDeclaration
+	MethodDeclaration
+	MethodDeclaration

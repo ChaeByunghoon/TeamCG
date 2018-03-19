@@ -1,0 +1,17 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+	ConstructorDeclaration
+		BlockStmt
+			msg
+	ConstructorDeclaration
+		BlockStmt
+			message
+			cause
+	ConstructorDeclaration
+		BlockStmt
+			cause
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				getCause

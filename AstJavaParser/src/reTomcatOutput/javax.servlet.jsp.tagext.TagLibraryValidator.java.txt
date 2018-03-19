@@ -1,0 +1,22 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+	MethodDeclaration
+		BlockStmt
+			initParameters
+			map
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				initParameters
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				NullLiteralExpr
+	MethodDeclaration
+		BlockStmt
+			initParameters
+			NullLiteralExpr
+	FieldDeclaration
+		VariableDeclarator
+			initParameters

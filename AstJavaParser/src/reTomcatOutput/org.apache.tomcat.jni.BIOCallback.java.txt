@@ -1,0 +1,11 @@
+ClassOrInterfaceDeclaration
+	MethodDeclaration
+		PrimitiveType
+		PrimitiveType
+	MethodDeclaration
+		PrimitiveType
+		PrimitiveType
+	MethodDeclaration
+		PrimitiveType
+	MethodDeclaration
+		PrimitiveType

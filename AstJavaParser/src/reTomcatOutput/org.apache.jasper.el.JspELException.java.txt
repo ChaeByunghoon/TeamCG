@@ -1,0 +1,11 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+			+
+				+
+					mark
+					StringLiteralExpr
+				getMessage
+					e
+			getCause
+				e

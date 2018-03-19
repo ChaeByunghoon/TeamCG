@@ -1,0 +1,25 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			Package
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			FORM_METHOD
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			FORM_ACTION
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			NONE_TRANSPORT
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			INTEGRAL_TRANSPORT
+	FieldDeclaration
+		VariableDeclarator
+			StringLiteralExpr
+			CONFIDENTIAL_TRANSPORT

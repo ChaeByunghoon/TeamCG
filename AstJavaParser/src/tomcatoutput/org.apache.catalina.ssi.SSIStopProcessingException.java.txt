@@ -1,0 +1,5 @@
+CompilationUnit
+	ClassOrInterfaceDeclaration
+		ClassOrInterfaceDeclaration
+		ClassOrInterfaceType
+			ClassOrInterfaceType

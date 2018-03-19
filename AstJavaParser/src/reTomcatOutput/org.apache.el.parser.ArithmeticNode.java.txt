@@ -1,0 +1,9 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+			i
+		PrimitiveType
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				ClassExpr

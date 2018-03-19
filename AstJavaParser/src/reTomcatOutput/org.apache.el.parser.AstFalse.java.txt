@@ -1,0 +1,9 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+			id
+		PrimitiveType
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				Boolean

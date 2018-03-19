@@ -1,0 +1,22 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			NullLiteralExpr
+			server
+	MethodDeclaration
+		BlockStmt
+			IfStmt
+				==
+					server
+					NullLiteralExpr
+				server
+			ReturnStmt
+				server
+	MethodDeclaration
+		BlockStmt
+			IfStmt
+				==
+					server
+					NullLiteralExpr
+				server
+				theServer

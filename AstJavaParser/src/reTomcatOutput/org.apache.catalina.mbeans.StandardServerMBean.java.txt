@@ -1,0 +1,26 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			createServer
+				MBeanUtils
+			mserver
+	ConstructorDeclaration
+		BlockStmt
+	MethodDeclaration
+		BlockStmt
+			VariableDeclarator
+				getServer
+					ServerFactory
+				server
+			IfStmt
+				server
+				BlockStmt
+					TryStmt
+						CatchClause
+							BlockStmt
+								ThrowStmt
+									e
+									StringLiteralExpr
+						BlockStmt
+							storeConfig
+								server

@@ -1,0 +1,27 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			printWriter
+	FieldDeclaration
+		VariableDeclarator
+			jspWriter
+	ConstructorDeclaration
+		BlockStmt
+			response
+			jspWriter
+			jspWriter
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				printWriter
+	MethodDeclaration
+		BlockStmt
+			ThrowStmt
+	MethodDeclaration
+		BlockStmt
+			TryStmt
+				CatchClause
+					BlockStmt
+				BlockStmt
+					clearBuffer
+						jspWriter

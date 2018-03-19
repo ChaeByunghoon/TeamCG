@@ -1,0 +1,20 @@
+CompilationUnit
+	ClassOrInterfaceDeclaration
+		ClassOrInterfaceDeclaration
+		ClassOrInterfaceType
+			ClassOrInterfaceType
+		FieldDeclaration
+			FieldDeclaration
+			ClassOrInterfaceType
+				ClassOrInterfaceType
+			VariableDeclarator
+				MethodCallExpr
+					NameExpr
+		ConstructorDeclaration
+			ConstructorDeclaration
+			ClassOrInterfaceType
+				ClassOrInterfaceType
+			ClassOrInterfaceType
+				ClassOrInterfaceType
+			BlockStmt
+				ExplicitConstructorInvocationStmt

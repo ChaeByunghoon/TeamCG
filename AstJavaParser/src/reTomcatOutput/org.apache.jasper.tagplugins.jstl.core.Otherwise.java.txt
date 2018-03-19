@@ -1,0 +1,8 @@
+ClassOrInterfaceDeclaration
+	MethodDeclaration
+		BlockStmt
+			generateJavaSource
+				StringLiteralExpr
+				ctxt
+			generateBody
+				ctxt

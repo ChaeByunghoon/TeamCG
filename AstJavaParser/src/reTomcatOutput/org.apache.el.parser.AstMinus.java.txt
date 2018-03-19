@@ -1,0 +1,20 @@
+ClassOrInterfaceDeclaration
+	ConstructorDeclaration
+		BlockStmt
+			id
+		PrimitiveType
+	MethodDeclaration
+		BlockStmt
+			VariableDeclarator
+				getValue
+					ctx
+				obj0
+			VariableDeclarator
+				getValue
+					ctx
+				obj1
+			ReturnStmt
+				subtract
+					obj0
+					obj1
+					ELArithmetic

@@ -1,0 +1,19 @@
+ClassOrInterfaceDeclaration
+	FieldDeclaration
+		VariableDeclarator
+			staticInstance
+	ConstructorDeclaration
+		BlockStmt
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				staticInstance
+	MethodDeclaration
+		BlockStmt
+			ThrowStmt
+				StringLiteralExpr
+	MethodDeclaration
+		BlockStmt
+			ReturnStmt
+				BooleanLiteralExpr
+		PrimitiveType
