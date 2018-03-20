@@ -12,6 +12,7 @@ import java.util.ArrayList;
 /**
  * Created by chaebyeonghun on 2018. 3. 10..
  */
+// 4번째 Lstm 논문에 나온 대로 visitor을 작성하였다.
 public class FourthStructVisitor extends VoidVisitorAdapter<Integer> {
     private ArrayList<ParsingNode> parsingNodes = new ArrayList<>();
     public void out(String node, int indentLevel){

@@ -14,6 +14,7 @@ import java.util.EnumSet;
 /**
  * Created by chaebyeonghun on 2018. 2. 21..
  */
+//연습용 코드 신경쓸 필요없음
 public class ClassCreator {
 
     public static void main(String[] args) throws Exception {

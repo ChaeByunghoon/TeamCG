@@ -12,6 +12,7 @@ import java.util.ArrayList;
 /**
  * Created by chaebyeonghun on 2018. 2. 25..
  */
+// 1번논문에 사용된 대표 노드들을 visit하는 visitor
 public class RepresentationNodeVisitor extends VoidVisitorAdapter<Integer> {
 
     private ArrayList<ParsingNode> parsingNodes = new ArrayList<>();

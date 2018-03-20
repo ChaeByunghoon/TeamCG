@@ -8,6 +8,8 @@ import java.util.ArrayList;
 /**
  * Created by chaebyeonghun on 2018. 2. 20..
  */
+// 파싱에 관해 컨트롤 하는 함수
+// 노드 파싱과 파싱한 것을 결과로 프린트할 수 있는 함수가 있다.
 public class ParsingController {
 
     ArrayList<CompilationUnit> units = new ArrayList<>();

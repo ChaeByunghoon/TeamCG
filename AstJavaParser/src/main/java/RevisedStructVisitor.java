@@ -13,6 +13,7 @@ import java.util.ArrayList;
 /**
  * Created by chaebyeonghun on 2018. 2. 25..
  */
+// TreeStructorVisitor의 자잘한 오류를 수정한 Visitor
 public class RevisedStructVisitor extends VoidVisitorAdapter<Integer> {
 
     private ArrayList<ParsingNode> parsingNodes = new ArrayList<>();

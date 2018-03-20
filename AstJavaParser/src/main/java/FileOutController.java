@@ -5,6 +5,7 @@ import java.util.Vector;
 /**
  * Created by chaebyeonghun on 2018. 2. 22..
  */
+//파일 출력 클래스
 public class FileOutController {
 
     public static String outputPath;
