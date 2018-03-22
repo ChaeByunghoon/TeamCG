@@ -33,12 +33,10 @@ public class FourthStructVisitor extends VoidVisitorAdapter<Integer> {
         super.visit(n, arg+1);
     }
 
-
     @Override
     public void visit(PrimitiveType n, Integer arg) {
         out(n.getClass().getSimpleName(), arg);
         super.visit(n, arg+1);
-
     }
 
     @Override
@@ -51,7 +49,6 @@ public class FourthStructVisitor extends VoidVisitorAdapter<Integer> {
     public void visit(IfStmt n, Integer arg) {
         out(n.getClass().getSimpleName(), arg);
         super.visit(n, arg+1);
-
     }
 
     @Override
@@ -64,7 +61,6 @@ public class FourthStructVisitor extends VoidVisitorAdapter<Integer> {
     public void visit(TryStmt n, Integer arg) {
         out(n.getClass().getSimpleName(), arg);
         super.visit(n, arg+1);
-
     }
 
     @Override
@@ -77,7 +73,6 @@ public class FourthStructVisitor extends VoidVisitorAdapter<Integer> {
     public void visit(BreakStmt n, Integer arg) {
         out(n.getClass().getSimpleName(), arg);
         super.visit(n, arg+1);
-
     }
 
     @Override
@@ -108,8 +103,10 @@ public class FourthStructVisitor extends VoidVisitorAdapter<Integer> {
 
     @Override
     public void visit(SuperExpr n, Integer arg) {
+        System.out.println("supersibal");
         out(n.getClass().getSimpleName(), arg);
         super.visit(n, arg+1);
+        System.out.println("supersibal");
 
     }
 

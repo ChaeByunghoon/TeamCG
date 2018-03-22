@@ -1,14 +1,34 @@
 package org.apache.synapse.commons.beanstalk.enterprise;
 public class Test{
 
-    public void hoon(){
+    private String cont = "shre";
+    ArrayList good = new ArrayList<>();
+    Vector<String> hi = new Vector<String>();
+    int i = 3;
 
-        int x = 0;
-        while(x < 10){
-            int y;
+    public HttpSession getSession (String test) {
 
+        good.add(1);
+        hi.add("Hello");
+
+        try {
+            fileOutController.fileOut();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        int y = 10;
+
+        switch (i){
+            case 0:
+                return super.getSession();
+            case 1:
+                return null;
+
+            default:
+                return null;
+        }
+
+
+        return super.getSession();
 
     }
 }

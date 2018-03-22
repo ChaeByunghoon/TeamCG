@@ -5,6 +5,7 @@ import com.github.javaparser.ast.body.*;
 import com.github.javaparser.ast.expr.*;
 import com.github.javaparser.ast.stmt.*;
 import com.github.javaparser.ast.type.PrimitiveType;
+import com.github.javaparser.ast.type.TypeParameter;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 import java.util.ArrayList;
@@ -35,15 +36,12 @@ public class RepresentationNodeVisitor extends VoidVisitorAdapter<Integer> {
         out(n, arg);
         super.visit(n, arg+1);
     }
-
-
     @Override
     public void visit(PrimitiveType n, Integer arg) {
         out(n, arg);
         super.visit(n, arg+1);
 
     }
-
     @Override
     public void visit(DoStmt n, Integer arg) {
         out(n, arg);
@@ -155,7 +153,6 @@ public class RepresentationNodeVisitor extends VoidVisitorAdapter<Integer> {
     public void visit(ExpressionStmt n, Integer arg) {
         out(n, arg);
         super.visit(n, arg+1);
-        System.out.println(n.getExpression());
     }
 
     @Override
@@ -193,6 +190,48 @@ public class RepresentationNodeVisitor extends VoidVisitorAdapter<Integer> {
         super.visit(n, arg+1);
 
     }
+
+    @Override
+    public void visit(Parameter n, Integer arg) {
+        out(n , arg);
+        super.visit(n, arg + 1);
+
+    }
+
+
+    @Override
+    public void visit(TypeParameter n, Integer arg) {
+        out(n, arg);
+        super.visit(n, arg + 1);
+    }
+
+    @Override
+    public void visit(ObjectCreationExpr n, Integer arg) {
+        out(n, arg);
+        super.visit(n, arg + 1);
+    }
+
+    @Override
+    public void visit(MethodReferenceExpr n, Integer arg) {
+        out(n, arg);
+        super.visit(n, arg + 1);
+    }
+
+    @Override
+    public void visit(ConditionalExpr n, Integer arg) {
+        out(n, arg);
+        super.visit(n, arg + 1);
+    }
+
+    /*@Override
+    // 이건 아무리 생각해도 말이안
+    public void visit(PackageDeclaration n, Integer arg) {
+        out(n, arg);
+        super.visit(n, arg + 1);
+    }*/
+
+    /*
+
     @Override
     public void visit(NameExpr n, Integer arg){
         out(n, arg);
@@ -244,5 +283,5 @@ public class RepresentationNodeVisitor extends VoidVisitorAdapter<Integer> {
     public void visit(ArrayInitializerExpr n, Integer arg) {
         out(n , arg);
         super.visit(n, arg + 1);
-    }
+    }*/
 }

@@ -19,7 +19,6 @@ public class ParsingController {
 
         ArrayList<CompilationUnit> units = new ArrayList<>();
         FileController fileController = new FileController("/Users/chaebyeonghun/Desktop/AstJavaParser/src/source/");
-        fileController.setFileList();
 
 
     }

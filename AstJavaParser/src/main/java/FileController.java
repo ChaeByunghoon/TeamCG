@@ -19,9 +19,10 @@ public class FileController {
         fileNames = new ArrayList<>();
         pathFileNames = new ArrayList<>();
         this.path = path;
+        setFileList();
 
     }
-    public void setFileList(){
+    private void setFileList(){
 
         // "/Desktop/AstJavaParser/src/main/source"
         File dirFile = new File(path);

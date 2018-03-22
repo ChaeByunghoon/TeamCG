@@ -133,14 +133,16 @@ public class TreeStructVisitor extends VoidVisitorAdapter<Integer> {
     @Override
     public void visit(final ClassOrInterfaceType n, final Integer arg) {
         out(n, arg);
+        System.out.println(n.asString());
+        System.out.println(n.asClassOrInterfaceType().asString());
         super.visit(n, arg + 1);
     }
 
-    @Override
+   /* @Override
     public void visit(final CompilationUnit n, final Integer arg) {
         out(n, arg);
         super.visit(n, arg+1);
-    }
+    }*/
 
     @Override
     public void visit(final ConditionalExpr n, final Integer arg) {
@@ -336,16 +338,13 @@ public class TreeStructVisitor extends VoidVisitorAdapter<Integer> {
     //ㅇㅣ부분은 고민좀해봐야함
     @Override
     public void visit(Name n, Integer arg) {
-        out(n, arg);
-        System.out.println(n.asString());
-
-
+        //out(n, arg);
     }
 
     @Override
     public void visit(SimpleName n, Integer arg) {
-        out(n, arg);
-        System.out.println(n.asString());
+        //out(n, arg);
+        //System.out.println(n.asString());
     }
 
 
