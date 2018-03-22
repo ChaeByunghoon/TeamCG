@@ -17,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        printAST(representationOption,"/Users/chaebyeonghun/Desktop/TeamCG/AstJavaParser/src/example/");
+        printAST(treeOption,"/Users/chaebyeonghun/Desktop/TeamCG/AstJavaParser/src/example/");
 
     }
 
@@ -29,7 +29,7 @@ public class Main {
         parsingController.printParsingNode();
 
         FileOutController fileOutController = new FileOutController(parsingNodes, fileController.getFileNames(), outputPath);
-        
+
         try {
             fileOutController.fileOut();
         } catch (IOException e) {

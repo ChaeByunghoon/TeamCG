@@ -159,7 +159,7 @@ public class RepresentationNodeVisitor extends VoidVisitorAdapter<Integer> {
     public void visit(VariableDeclarator n, Integer arg) {
         out(n, arg);
         super.visit(n, arg+1);
-        System.out.println(n.getNameAsString() + "az");
+
 
     }
 

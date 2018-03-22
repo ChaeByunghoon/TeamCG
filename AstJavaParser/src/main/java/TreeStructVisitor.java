@@ -35,18 +35,6 @@ public class TreeStructVisitor extends VoidVisitorAdapter<Integer> {
     }
 
     @Override
-    public void visit(final AnnotationDeclaration n, final Integer arg) {
-        out(n, arg);
-        super.visit(n, arg+1);
-    }
-
-    @Override
-    public void visit(final AnnotationMemberDeclaration n, final Integer arg) {
-        out(n, arg);
-        super.visit(n, arg+1);
-    }
-
-    @Override
     public void visit(final ArrayAccessExpr n, final Integer arg) {
         out(n, arg);
         super.visit(n, arg+1);
@@ -274,11 +262,6 @@ public class TreeStructVisitor extends VoidVisitorAdapter<Integer> {
 
     }
 
-    @Override
-    public void visit(final MarkerAnnotationExpr n, final Integer arg) {
-        out(n, arg);
-        super.visit(n, arg+1);
-    }
 
     @Override
     public void visit(final MemberValuePair n, final Integer arg) {
@@ -300,12 +283,6 @@ public class TreeStructVisitor extends VoidVisitorAdapter<Integer> {
 
     @Override
     public void visit(final NameExpr n, final Integer arg) {
-        out(n, arg);
-        super.visit(n, arg+1);
-    }
-
-    @Override
-    public void visit(final NormalAnnotationExpr n, final Integer arg) {
         out(n, arg);
         super.visit(n, arg+1);
     }
@@ -347,7 +324,6 @@ public class TreeStructVisitor extends VoidVisitorAdapter<Integer> {
         //System.out.println(n.asString());
     }
 
-
     @Override
     public void visit(ArrayType n, Integer arg) {
         out(n, arg);
@@ -374,12 +350,6 @@ public class TreeStructVisitor extends VoidVisitorAdapter<Integer> {
 
     @Override
     public void visit(final ReturnStmt n, final Integer arg) {
-        out(n, arg);
-        super.visit(n, arg+1);
-    }
-
-    @Override
-    public void visit(final SingleMemberAnnotationExpr n, final Integer arg) {
         out(n, arg);
         super.visit(n, arg+1);
     }
@@ -506,14 +476,6 @@ public class TreeStructVisitor extends VoidVisitorAdapter<Integer> {
         super.visit(n, arg+1);
     }
 
-
-    @Override
-    public void visit(NodeList n, Integer arg) {
-        out(n.getParentNodeForChildren(), arg);
-        super.visit(n, arg + 1);
-    }
-
-
     @Override
     public void visit(ModuleDeclaration n, Integer arg) {
         out(n, arg);
@@ -567,6 +529,5 @@ public class TreeStructVisitor extends VoidVisitorAdapter<Integer> {
         out(n, arg);
         super.visit(n, arg+1);
     }
-
 
 }
