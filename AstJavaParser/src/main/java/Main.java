@@ -13,11 +13,12 @@ public class Main {
     public static final String revisedOption = "REVISED_OPTION";
     public static final String representationOption = "REPRESENTATION_OPTION";
     public static final String fourthOption = "FOURTH_OPTION";
+    public static final String handCraftOption = "HAND_OPTION";
 
 
     public static void main(String[] args) throws FileNotFoundException {
+        testRepresentation("/Users/chaebyeonghun/Desktop/tomcat/","/Users/chaebyeonghun/Desktop/tomcat_representation/");
 
-        printAST(treeOption,"/Users/chaebyeonghun/Desktop/TeamCG/AstJavaParser/src/example/");
 
     }
 
@@ -37,6 +38,23 @@ public class Main {
         }
     }
 
+    private static void testHandCraftTree(String inputPath, String outputPath) throws FileNotFoundException{
+
+        FileController fileController = new FileController(inputPath);
+        ParsingController parsingController = new ParsingController(fileController.getPathFileNames());
+        ArrayList<ArrayList<ParsingNode>> parsingNodes = parsingController.parsingNodeByHandCraftStructure();
+        parsingController.printHandCraftStructParsingNode();
+
+        FileOutController fileOutController = new FileOutController(parsingNodes, fileController.getFileNames(), outputPath);
+
+        try {
+            fileOutController.fileOut();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+    }
     private static void testRevised(String path, String outputPath) throws FileNotFoundException {
         FileController fileController = new FileController(path);
 
@@ -83,7 +101,6 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
     private static void printAST(String option, String path) throws FileNotFoundException{
         FileController fileController = new FileController(path);
@@ -104,6 +121,10 @@ public class Main {
             case fourthOption:
                 ps = new ParsingController(fileController.getPathFileNames());
                 ps.printFourthStructParsingNode();
+                break;
+            case handCraftOption:
+                ps = new ParsingController(fileController.getPathFileNames());
+                ps.printHandCraftStructParsingNode();
                 break;
             default:
                 System.out.println("Wrong code");

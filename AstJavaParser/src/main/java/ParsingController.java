@@ -79,6 +79,16 @@ public class ParsingController {
         }
         return nodeDatas;
     }
+    public ArrayList<ArrayList<ParsingNode>> parsingNodeByHandCraftStructure(){
+        HandCraftStructVisitor rsSelector;
+        ArrayList<ArrayList<ParsingNode>> nodeDatas = new ArrayList<>();
+        for(CompilationUnit cu : units){
+            rsSelector = new HandCraftStructVisitor();
+            rsSelector.visit(cu,0);
+            nodeDatas.add(rsSelector.getParsingNodes());
+        }
+        return nodeDatas;
+    }
 
 
 
@@ -142,6 +152,21 @@ public class ParsingController {
             }
         }
 
+    }
+    public void printHandCraftStructParsingNode(){
+        HandCraftStructVisitor selector;
+        ArrayList<ArrayList<ParsingNode>> nodeDatas = new ArrayList<>();
+        for(CompilationUnit cu : units){
+            selector = new HandCraftStructVisitor();
+
+            selector.visit(cu, 0);
+            nodeDatas.add(selector.getParsingNodes());
+        }
+        for(int i = 0; i < nodeDatas.size(); i++){
+            for(int j = 0 ; j < nodeDatas.get(i).size(); j++){
+                System.out.println(nodeDatas.get(i).get(j).getNodeRepresentation());
+            }
+        }
     }
 
 
